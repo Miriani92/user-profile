@@ -1,8 +1,10 @@
-import React from 'react';
-import NetInfo from '@react-native-community/netinfo';
+import React, {useEffect} from 'react';
+import NoInternet from '../screens/NoInternet';
+import {useNetInfo} from '@react-native-community/netinfo';
 
-const NetworkStatus = () => {
-    return <div>NetworkStatus</div>;
+const NetworkStatus = ({children}: any) => {
+    const {isConnected} = useNetInfo();
+    return isConnected ? children : <NoInternet />;
 };
 
 export default NetworkStatus;
