@@ -1,10 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet, View} from 'react-native';
+import {AppContainer} from './components';
 export const App = () => {
     return (
-        <View style={styles.wrapper}>
-            <Text style={styles.text}>Hello world</Text>
-        </View>
+        <AppContainer>
+            <View style={styles.wrapper}>
+                <Text style={styles.text}>Hello eli</Text>
+            </View>
+        </AppContainer>
     );
 };
 
