@@ -1,14 +1,17 @@
 import React from 'react';
 import {Text, StyleSheet, View} from 'react-native';
 import {AppContainer, NetworkStatus} from './components';
+import {ErrorHandler} from './components';
 
 export const App = () => {
     return (
         <AppContainer>
             <NetworkStatus>
-                <View style={styles.wrapper}>
-                    <Text style={styles.text}>Hello World</Text>
-                </View>
+                <ErrorHandler>
+                    <View style={styles.wrapper}>
+                        <Text style={styles.text}>Hello World</Text>
+                    </View>
+                </ErrorHandler>
             </NetworkStatus>
         </AppContainer>
     );

@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import NoInternet from '../screens/NoInternet';
+import React from 'react';
+import {NoInternet} from '../';
 import {useNetInfo} from '@react-native-community/netinfo';
 
 const NetworkStatus = ({children}: any) => {

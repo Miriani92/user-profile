@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 const NoInternet = () => {
-    console.log('hello world');
     return (
         <View style={styles.wrapper}>
             <Text style={styles.text}>No Internet Connection</Text>
