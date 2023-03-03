@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-
-const App = () => {
+export const App = () => {
     return (
         <View style={styles.wrapper}>
             <Text style={styles.text}>Hello world</Text>
@@ -18,7 +17,6 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'white',
+        fontSize: 20,
     },
 });
-
-export default App;
