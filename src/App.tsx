@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, StyleSheet, View} from 'react-native';
+import {MenuProvider} from 'react-native-popup-menu';
 import {AppContainer, NetworkStatus} from './components';
 import {ErrorHandler} from './components';
 
@@ -8,9 +9,11 @@ export const App = () => {
         <AppContainer>
             <NetworkStatus>
                 <ErrorHandler>
-                    <View style={styles.wrapper}>
-                        <Text style={styles.text}>Hello World</Text>
-                    </View>
+                    <MenuProvider>
+                        <View style={styles.wrapper}>
+                            <Text style={styles.text}>Hello World</Text>
+                        </View>
+                    </MenuProvider>
                 </ErrorHandler>
             </NetworkStatus>
         </AppContainer>
