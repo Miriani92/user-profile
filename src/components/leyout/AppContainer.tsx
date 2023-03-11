@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, Platform, StyleSheet, StatusBar} from 'react-native';
+import {View, Platform, StatusBar, Text} from 'react-native';
 
 const AppContainer = ({children}: any) => {
     return (
-        <View style={styles.container}>
+        <View className="flex-1">
             {Platform.OS === 'android' ? (
                 <StatusBar
                     barStyle={'light-content'}
@@ -18,9 +18,3 @@ const AppContainer = ({children}: any) => {
 };
 
 export default AppContainer;
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-});

@@ -3,8 +3,8 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const NoInternet = () => {
     return (
-        <View style={styles.wrapper}>
-            <Text style={styles.text}>No Internet Connection</Text>
+        <View className="flex-1 justify-center align-middle bg-slate-400">
+            <Text className="text-center text-3xl">loading...</Text>
         </View>
     );
 };
