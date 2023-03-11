@@ -1,8 +1,11 @@
 import React from 'react';
-import {View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {GuestNavigator} from './navigation/navigators/GuestNavigator';
 
 export const Root = () => {
     return (
-        <View className="flex-1 justify-center align-middle bg-green-500"></View>
+        <NavigationContainer>
+            <GuestNavigator />
+        </NavigationContainer>
     );
 };
